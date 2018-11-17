@@ -13,9 +13,9 @@ source:
   sha256: 96f33cc00e9126e5cd891b6052cbb7e23df64f4f32df79777fe9773dfa644dbd
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -66,8 +66,7 @@ about:
     includes setting up unit testing, test  coverage, continuous integration, Git, 'GitHub',
     licenses, 'Rcpp', 'RStudio'  projects, and more.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
