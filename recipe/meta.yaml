@@ -1,4 +1,4 @@
-{% set version = "1.5.0" %}
+{% set version = '1.5.0' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -13,9 +13,9 @@ source:
   sha256: 4fe91458ebc664193e1593d4623370578114bb356f9cd22956fa1a71869ac65e
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -33,11 +33,14 @@ requirements:
     - r-fs >=1.2.0
     - r-gh
     - r-git2r >=0.23
-    - r-glue
+    - r-glue >=1.2.0
+    - r-purrr
     - r-rlang
     - r-rprojroot >=1.2
     - r-rstudioapi
     - r-whisker
+    - r-withr
+    - r-yaml
   run:
     - r-base
     - r-clipr >=0.3.0
@@ -48,11 +51,14 @@ requirements:
     - r-fs >=1.2.0
     - r-gh
     - r-git2r >=0.23
-    - r-glue
+    - r-glue >=1.2.0
+    - r-purrr
     - r-rlang
     - r-rprojroot >=1.2
     - r-rstudioapi
     - r-whisker
+    - r-withr
+    - r-yaml
 
 test:
   commands:
@@ -60,7 +66,7 @@ test:
     - "\"%R%\" -e \"library('usethis')\""  # [win]
 
 about:
-  home: https://github.com/r-lib/usethis
+  home: https://usethis.r-lib.org, https://github.com/r-lib/usethis
   license: GPL-3
   summary: Automate package and project setup tasks that are otherwise performed manually. This
     includes setting up unit testing, test  coverage, continuous integration, Git, 'GitHub',
@@ -70,9 +76,26 @@ about:
 
 extra:
   recipe-maintainers:
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
+    - conda-forge/r
+
+# Package: usethis
+# Title: Automate Package and Project Setup
+# Version: 1.5.0
+# Authors@R: c( person("Hadley", "Wickham", , "hadley@rstudio.com", role = "aut", comment = c(ORCID = "0000-0003-4757-117X") ), person("Jennifer", "Bryan", , "jenny@rstudio.com", c("aut", "cre"), comment = c(ORCID = "0000-0002-6983-2759") ), person("RStudio", role = c("cph", "fnd")) )
+# Description: Automate package and project setup tasks that are otherwise performed manually. This includes setting up unit testing, test  coverage, continuous integration, Git, 'GitHub', licenses, 'Rcpp', 'RStudio'  projects, and more.
+# License: GPL-3
+# URL: https://usethis.r-lib.org, https://github.com/r-lib/usethis
+# BugReports: https://github.com/r-lib/usethis/issues
+# Depends: R (>= 3.1)
+# Imports: clipr (>= 0.3.0), clisymbols, crayon, curl (>= 2.7), desc, fs (>= 1.2.0), gh, git2r (>= 0.23), glue (>= 1.2.0), purrr, rlang, rprojroot (>= 1.2), rstudioapi, stats, utils, whisker, withr, yaml
+# Suggests: covr, knitr, magick, pkgdown (>= 1.1.0), rmarkdown, roxygen2, spelling (>= 1.2), styler (>= 1.0.2), testthat (>= 2.0.0)
+# Encoding: UTF-8
+# Language: en-US
+# LazyData: true
+# RoxygenNote: 6.1.1
+# NeedsCompilation: no
+# Packaged: 2019-04-05 19:31:44 UTC; jenny
+# Author: Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>), Jennifer Bryan [aut, cre] (<https://orcid.org/0000-0002-6983-2759>), RStudio [cph, fnd]
+# Maintainer: Jennifer Bryan <jenny@rstudio.com>
+# Repository: CRAN
+# Date/Publication: 2019-04-07 10:50:44 UTC
