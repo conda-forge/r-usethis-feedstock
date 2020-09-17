@@ -5,7 +5,7 @@ Home: https://usethis.r-lib.org, https://github.com/r-lib/usethis
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Automate package and project setup tasks that are otherwise performed manually. This includes setting up unit testing, test  coverage, continuous integration, Git, 'GitHub', licenses, 'Rcpp', 'RStudio'  projects, and more.
 
