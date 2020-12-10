@@ -3,7 +3,7 @@ About r-usethis
 
 Home: https://usethis.r-lib.org, https://github.com/r-lib/usethis
 
-Package license: GPL-3
+Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-usethis-feedstock/blob/master/LICENSE.txt)
 
