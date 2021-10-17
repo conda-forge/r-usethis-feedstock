@@ -1,4 +1,4 @@
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/usethis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/usethis/usethis_{{ version }}.tar.gz
-  sha256: ef269e7a3190791bc77ff1d5cb11f20cb594adedb334805f88db5451f3ffd6c8
+  sha256: 9ed9176126414307895b188bd87d8fc09e9c972afba2dba8a671a52ff2ca80e8
 
 build:
   merge_build_host: true  # [win]
@@ -30,6 +30,7 @@ requirements:
     - r-crayon
     - r-curl >=2.7
     - r-desc
+    - r-ellipsis
     - r-fs >=1.3.0
     - r-gert >=1.0.2
     - r-gh >=1.2.0
@@ -51,6 +52,7 @@ requirements:
     - r-crayon
     - r-curl >=2.7
     - r-desc
+    - r-ellipsis
     - r-fs >=1.3.0
     - r-gert >=1.0.2
     - r-gh >=1.2.0
