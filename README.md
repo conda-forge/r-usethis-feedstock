@@ -1,11 +1,11 @@
-About r-usethis
-===============
+About r-usethis-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-usethis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://usethis.r-lib.org, https://github.com/r-lib/usethis
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-usethis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automate package and project setup tasks that are otherwise performed manually. This includes setting up unit testing, test  coverage, continuous integration, Git, 'GitHub', licenses, 'Rcpp', 'RStudio'  projects, and more.
 
