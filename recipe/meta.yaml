@@ -1,4 +1,4 @@
-{% set version = "2.2.3" %}
+{% set version = "3.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/usethis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/usethis/usethis_{{ version }}.tar.gz
-  sha256: 8d0c98995c23b5f4b5b95cd453557d2d15faa7399cc01bff304f5b15cb0cdeb3
+  sha256: 98f850f9ceaae37eb16ccd1232275b4e8f818c115c67151fa99096c477f7ccb5
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
